@@ -81,6 +81,7 @@ namespace Generics
 
             #endregion
 
+            #region GenerischerStack - Eigenbau
 
             GenerischerStack<int> meinStack = new GenerischerStack<int>();
 
@@ -90,8 +91,24 @@ namespace Generics
             // MeineMEthode<int,string,decimal>(12, "asd");
 
             //NurObjekte(new StringBuilder());
-            //NurObjekte(12);
+            //NurObjekte(12); 
+            #endregion
 
+
+            Dictionary<string, string> länder = new Dictionary<string, string>();
+
+            länder.Add("Österreich", "Berlin");
+            länder.Add("Deutschland", "Berlin");
+            länder.Add("Ungarn", "Budapest");
+            länder.Add("Tschechei", "Prag");
+            länder.Add("Tschechei", "Bratislava");
+
+            Console.WriteLine(länder["Österreich"]);
+
+
+            MeineListe l = new MeineListe();
+
+            l[1] = 5;
             Console.WriteLine("---ENDE---");
             Console.ReadKey();
         }
@@ -104,6 +121,17 @@ namespace Generics
         //public static void NurObjekte<T>(T meinObjekt) where T : IEnumerable
         //{
         //    meinObjekt.
+        //}
+
+        //class MeineListe
+        //{
+        //    // indexer + TAB + TAB
+
+        //    public TValue this[int index]
+        //    {
+        //        get { /* return the specified index here */ }
+        //        set { /* set the specified index to value here */ }
+        //    }
         //}
     }
 }
