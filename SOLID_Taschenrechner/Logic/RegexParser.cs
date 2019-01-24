@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SOLID_Taschenrechner.Domain;
+using System;
 using System.Text.RegularExpressions;
 
-namespace SOLID_Taschenrechner
+namespace SOLID_Taschenrechner.Logic
 {
-    class RegexParser : IParser
+    public class RegexParser : IParser
     {
         public Formel Parse(string input)
         {

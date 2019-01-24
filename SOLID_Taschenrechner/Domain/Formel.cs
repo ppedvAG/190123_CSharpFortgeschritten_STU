@@ -1,6 +1,6 @@
-﻿namespace SOLID_Taschenrechner
+﻿namespace SOLID_Taschenrechner.Domain
 {
-    class Formel
+    public class Formel
     {
         public int Operand1 { get; set; }
         public int Operand2 { get; set; }

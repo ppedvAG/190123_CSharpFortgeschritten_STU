@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SOLID_Taschenrechner.Domain;
+using System;
+using System.Linq;
 
-namespace SOLID_Taschenrechner
+namespace SOLID_Taschenrechner.Logic
 {
-    class ModularerRechner : IRechner
+    public class ModularerRechner : IRechner
     {
         public ModularerRechner(params IRechenoperation[] rechenoperationen)
         {

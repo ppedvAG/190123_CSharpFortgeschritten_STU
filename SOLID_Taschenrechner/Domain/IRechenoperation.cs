@@ -1,6 +1,6 @@
-﻿namespace SOLID_Taschenrechner
+﻿namespace SOLID_Taschenrechner.Domain
 {
-    interface IRechenoperation
+    public interface IRechenoperation
     {
         char Operator { get; }
         int Berechne(int operator1, int operator2);

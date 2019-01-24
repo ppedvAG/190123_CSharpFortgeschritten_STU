@@ -1,8 +1,9 @@
-﻿using System;
+﻿using SOLID_Taschenrechner.Domain;
+using System;
 
-namespace SOLID_Taschenrechner
+namespace SOLID_Taschenrechner.Logic
 {
-    class StringSplitParser : IParser
+    public class StringSplitParser : IParser
     {
         public Formel Parse(string input)
         {

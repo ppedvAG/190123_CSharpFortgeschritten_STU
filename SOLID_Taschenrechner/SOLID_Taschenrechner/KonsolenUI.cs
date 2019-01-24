@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOLID_Taschenrechner.Domain;
+using System;
 
 namespace SOLID_Taschenrechner
 {

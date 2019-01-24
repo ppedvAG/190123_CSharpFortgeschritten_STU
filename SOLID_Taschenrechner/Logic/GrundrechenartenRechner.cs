@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SOLID_Taschenrechner.Domain;
+using System;
 using System.Linq;
 
-namespace SOLID_Taschenrechner
+namespace SOLID_Taschenrechner.Logic
 {
-    class GrundrechenartenRechner : IRechner
+    public class GrundrechenartenRechner : IRechner
     {
         public int Berechne(Formel formel)
         {

@@ -1,6 +1,8 @@
-﻿namespace SOLID_Taschenrechner
+﻿using SOLID_Taschenrechner.Domain;
+
+namespace SOLID_Taschenrechner.FreeFeatures
 {
-    class Addition : IRechenoperation
+    public class Addition : IRechenoperation
     {
         public char Operator => '+';
         public int Berechne(int operator1, int operator2 ) => operator1 + operator2;

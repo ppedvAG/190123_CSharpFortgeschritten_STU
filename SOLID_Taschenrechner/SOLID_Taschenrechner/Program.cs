@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using SOLID_Taschenrechner.FreeFeatures;
+using SOLID_Taschenrechner.Logic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +12,7 @@ namespace SOLID_Taschenrechner
         // Bootstrapping -> Initialisieren der Logik
         static void Main(string[] args)
         {
-            var parser = new StringSplitParser();
+            var parser = new RegexParser();
             var rechner = new ModularerRechner(new Addition(),new Subtraktion());
             new KonsolenUI(parser,rechner).Start();
         }
