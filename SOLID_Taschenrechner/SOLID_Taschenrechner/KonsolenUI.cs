@@ -27,7 +27,6 @@ namespace SOLID_Taschenrechner
             Console.WriteLine("---ENDE--");
 
             Console.ReadKey();
-
         }
     }
 }
