@@ -10,8 +10,8 @@ namespace SOLID_Taschenrechner
         // Bootstrapping -> Initialisieren der Logik
         static void Main(string[] args)
         {
-            var parser = new RegexParser();
-            var rechner = new Rechner();
+            var parser = new StringSplitParser();
+            var rechner = new ModularerRechner(new Addition(),new Subtraktion());
             new KonsolenUI(parser,rechner).Start();
         }
     }
