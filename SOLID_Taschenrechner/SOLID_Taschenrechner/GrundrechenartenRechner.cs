@@ -16,24 +16,6 @@ namespace SOLID_Taschenrechner
         }
     }
 
-    class ModularerRechner : IRechner
-    {
-        public ModularerRechner(params IRechenoperation[] rechenoperationen)
-        {
-            this.rechenoperationen = rechenoperationen;
-        }
-        private readonly IRechenoperation[] rechenoperationen;
-
-        public int Berechne(Formel formel)
-        {
-            if (!rechenoperationen.Any(x => x.Operator == formel.Operator))
-                throw new NotSupportedException("Diese Rechenoperation wird nicht unterstütz");
-
-            return rechenoperationen.First(x => x.Operator == formel.Operator)
-                                    .Berechne(formel.Operand1, formel.Operand2);
-        }
-    }
-
     #region Params - Erklärung
     //class Demo
     //{
