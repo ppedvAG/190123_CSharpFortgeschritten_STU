@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace SOLID_Taschenrechner
 {
-    class Rechner : IRechner
+    class GrundrechenartenRechner : IRechner
     {
         public int Berechne(Formel formel)
         {
