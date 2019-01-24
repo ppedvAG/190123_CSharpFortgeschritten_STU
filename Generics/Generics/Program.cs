@@ -101,16 +101,26 @@ namespace Generics
             länder.Add("Deutschland", "Berlin");
             länder.Add("Ungarn", "Budapest");
             länder.Add("Tschechei", "Prag");
-            länder.Add("Tschechei", "Bratislava");
+            // länder.Add("Tschechei", "Bratislava");
 
             Console.WriteLine(länder["Österreich"]);
 
 
-            MeineListe l = new MeineListe();
+            // MeineListe l = new MeineListe();
 
-            l[1] = 5;
+            demo(ausgabe: 5);
+
+            bool meinDefault;
+            Console.WriteLine(meinDefault);
+
+            //l[1] = 5;
             Console.WriteLine("---ENDE---");
             Console.ReadKey();
+        }
+
+        public static void demo (string eingabe = null, int ausgabe = 0)
+        {
+
         }
 
         //public static T3 MeineMEthode<T1,T2,T3>(T1 item, T2 option)
